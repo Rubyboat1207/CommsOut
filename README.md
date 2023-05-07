@@ -1,11 +1,6 @@
-# Shooter Template
-Designed as a minimal starting point for your projects in s&box.
+# Hey you...
+rooted in the base shooter template, with my own additions:
 
-## Features
-- First person pawn
-- Simple pawn controller
-- Simple weapon system
-
-## Controls
-- Regular movement with WASD
-- Shoot weapon with LMB
+- Crouch/Ducking
+- Auto bhop
+- Aiming down sights
