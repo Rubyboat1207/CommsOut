@@ -25,7 +25,7 @@ public partial class WeaponViewModel : BaseViewModel
 		if ( Game.IsRunningInVR )
 			return;
 		
-		TargetOffset += new Vector3(Random.Shared.Float(-1, 1), Random.Shared.Float(-1, 1), Random.Shared.Float(-1, 1));
+		// TargetOffset += new Vector3(Random.Shared.Float(-1, 1), Random.Shared.Float(-1, 1), Random.Shared.Float(-1, 1));
 
 		Offset = Vector3.Lerp(Offset, ToRotated(TargetOffset), Time.Delta * 10);
 
