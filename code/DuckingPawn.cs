@@ -1,6 +1,6 @@
 using Sandbox;
 
-namespace MyGame;
+namespace NoComms;
 
 partial class Pawn : AnimatedEntity {
     public bool ducking { get; private set;}

@@ -1,6 +1,6 @@
-using MyGame.Utility;
+using NoComms.Utility;
 
-namespace MyGame;
+namespace NoComms;
 public interface IAimDownSights {
     Vector3 AimSightsTargetPose { get; }
     Vector3 NormalPose { get; }

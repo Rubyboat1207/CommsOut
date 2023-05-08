@@ -1,6 +1,6 @@
 using Sandbox;
 
-namespace MyGame;
+namespace NoComms;
 
 public partial class Pistol : Weapon, IAimDownSights
 {

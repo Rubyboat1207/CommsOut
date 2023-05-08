@@ -1,9 +1,9 @@
 ﻿using Sandbox;
 using System;
 using System.Collections.Generic;
-using MyGame.Utility;
+using NoComms.Utility;
 
-namespace MyGame;
+namespace NoComms;
 
 public class PawnController : EntityComponent<Pawn>
 {

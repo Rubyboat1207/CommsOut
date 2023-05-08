@@ -1,7 +1,7 @@
 ﻿using Sandbox;
 using System.ComponentModel;
 
-namespace MyGame;
+namespace NoComms;
 
 public partial class Pawn : AnimatedEntity
 {

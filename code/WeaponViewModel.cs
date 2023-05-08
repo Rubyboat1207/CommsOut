@@ -1,7 +1,7 @@
 using Sandbox;
 using System;
 
-namespace MyGame;
+namespace NoComms;
 
 public partial class WeaponViewModel : BaseViewModel
 {

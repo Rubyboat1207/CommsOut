@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace MyGame.Utility;
+namespace NoComms.Utility;
 
 public class ModifierItem<T> {
     public string Name {get; init;}
