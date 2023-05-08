@@ -16,6 +16,8 @@ public partial class Pawn : AnimatedEntity
 
 	
 	SpotLightEntity light;
+
+	float LocalEyeOffset = 0;
 	
 
 	/// <summary>
@@ -68,7 +70,7 @@ public partial class Pawn : AnimatedEntity
 		EnableHideInFirstPerson = true;
 		EnableShadowInFirstPerson = true;
 
-		light = new SpotLightEntity();
+		// light = new SpotLightEntity();
 	}
 
 	public void SetActiveWeapon( Weapon weapon )
@@ -101,9 +103,9 @@ public partial class Pawn : AnimatedEntity
 		Animator?.Simulate();
 		ActiveWeapon?.Simulate( cl );
 
-
+		LocalEyeOffset = MathX.Lerp(LocalEyeOffset, ducking ? 32f : 64f, Time.Delta * 10);
 		
-		EyeLocalPosition = Vector3.Up * ((ducking ? 32f : 64f) * Scale);
+		EyeLocalPosition = Vector3.Up * (LocalEyeOffset * Scale);
 
 		// if(light == null) {
 		// 	return;

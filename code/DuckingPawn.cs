@@ -17,9 +17,11 @@ partial class Pawn : AnimatedEntity {
 
     public virtual void TryUnDuck()
     {
-        var pm = TraceBBox( Position, Position, Hull.Mins, Hull.Maxs + 32);
+        var pm = Trace.Ray( new Ray(Position, Vector3.Up), 92 * Scale).Run();
 
-        if ( pm.StartedSolid ) return;
+        Log.Info(pm.Hit);
+
+        if ( pm.Hit ) return;
 
         Components.Get<PawnController>().MoveModifierHandler.Remove("crouch");
 
